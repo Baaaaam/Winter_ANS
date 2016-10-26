@@ -1,0 +1,4 @@
+#!/bin/zsh
+
+paste -d " " <(cyan -db cyclus.sqlite trans |grep J1 |grep pu |grep mixer | tail -n +2) <(cyan -db cyclus.sqlite trans |grep J1 |grep pu |grep mixer |grep storage | tail -n +2 ) <(cyan -db cyclus.sqlite trans |grep J1 |grep pu |grep mixer |grep source | tail -n +2 )> trans
+cyan -db cyclus.sqlite inv J1_second_storage_pu | tail -n +2 >storage

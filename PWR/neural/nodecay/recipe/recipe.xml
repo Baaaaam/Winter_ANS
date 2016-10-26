@@ -1,0 +1,379 @@
+<My_include>
+  
+  <!-- depleted Uranium recipe -->
+  <recipe>
+    <name>du</name>
+    <basis>mass</basis>
+    <nuclide> <id>U235</id><comp>0.0025</comp></nuclide>
+    <nuclide><id>U238</id><comp>0.9975</comp></nuclide>
+  </recipe>
+  <!-- *********************** -->
+  
+  <!-- Naturel Uranium recipe -->
+  <recipe>
+    <name>natl_u</name>
+    <basis>mass</basis>
+    <nuclide> <id>U235</id> <comp>0.711</comp> </nuclide>
+    <nuclide> <id>U238</id> <comp>99.289</comp> </nuclide>
+  </recipe>
+  <!-- *********************** -->
+  
+  
+  <!-- EXT2 Uranium recipe -->
+  <recipe>
+    <name>EXT2_ru_stored</name>
+    <basis>mass</basis>
+    <nuclide> <id>U238</id> <comp>1</comp> </nuclide>
+  </recipe>
+  <!-- *********************** -->
+  
+  
+  <!-- EXT2 plutonium recipe -->
+  <recipe>
+    <name>EXT2_pu_stored</name>
+    <basis>mass</basis>
+    <nuclide> <id>PU239</id> <comp>1</comp> </nuclide>
+  </recipe>
+  <!-- *********************** -->
+  
+  
+  <!-- Blanket Uranium recipe -->
+  <recipe>
+    <name>FBR_blanket_Upu</name>
+    <basis>mass</basis>
+    <nuclide> <id>U234</id> <comp>0.00002</comp> </nuclide>
+    <nuclide> <id>U235</id> <comp>0.00203</comp> </nuclide>
+    <nuclide> <id>U236</id> <comp>0.00083</comp> </nuclide>
+    <nuclide> <id>U237</id> <comp>0.00000</comp> </nuclide>
+    <nuclide> <id>U238</id> <comp>0.81082</comp> </nuclide>
+    
+    <nuclide> <id>PU238</id> <comp>0.000087</comp> </nuclide>
+    <nuclide> <id>PU239</id> <comp>0.179764</comp> </nuclide>
+    <nuclide> <id>PU240</id> <comp>0.006166</comp> </nuclide>
+    <nuclide> <id>PU241</id> <comp>0.000216</comp> </nuclide>
+    <nuclide> <id>PU242</id> <comp>0.000007</comp> </nuclide>
+  </recipe>
+  <!-- *********************** -->
+  <recipe>
+    <name>E3_u</name>
+    <basis>mass</basis>
+    <nuclide> <id>U234</id> <comp>0.00002</comp> </nuclide>
+    <nuclide> <id>U235</id> <comp>0.00203</comp> </nuclide>
+    <nuclide> <id>U236</id> <comp>0.00083</comp> </nuclide>
+    <nuclide> <id>U237</id> <comp>0.00000</comp> </nuclide>
+    <nuclide> <id>U238</id> <comp>0.81082</comp> </nuclide>
+  </recipe>
+  <!-- *********************** -->
+  <recipe>
+    <name>E3_pu</name>
+    <basis>mass</basis>
+    <nuclide> <id>PU238</id> <comp>0.000087</comp> </nuclide>
+    <nuclide> <id>PU239</id> <comp>0.179764</comp> </nuclide>
+    <nuclide> <id>PU240</id> <comp>0.006166</comp> </nuclide>
+    <nuclide> <id>PU241</id> <comp>0.000216</comp> </nuclide>
+    <nuclide> <id>PU242</id> <comp>0.000007</comp> </nuclide>
+  </recipe>
+  
+  
+  
+  
+  <!-- recycled PWR Uranium recipe -->
+  <recipe>
+    <name>PWR_Upu</name>
+    <basis>mass</basis>
+    <nuclide> <id>U238</id>  <comp>0.93632 </comp> </nuclide>
+    <nuclide> <id>PU238</id> <comp>0.001216</comp> </nuclide>
+    <nuclide> <id>PU239</id> <comp>0.027058</comp> </nuclide>
+    <nuclide> <id>PU240</id> <comp>0.018193</comp> </nuclide>
+    <nuclide> <id>PU241</id> <comp>0.010380</comp> </nuclide>
+    <nuclide> <id>PU242</id> <comp>0.006833</comp> </nuclide>
+  </recipe>
+  <!-- *********************** -->
+  <recipe>
+    <name>J1_u</name>
+    <basis>mass</basis>
+    <nuclide> <id>U238</id>  <comp>0.93632 </comp> </nuclide>
+  </recipe>
+  <recipe>
+    <name>J1_pu</name>
+    <basis>mass</basis>
+    <nuclide> <id>PU238</id> <comp>0.001216</comp> </nuclide>
+    <nuclide> <id>PU239</id> <comp>0.027058</comp> </nuclide>
+    <nuclide> <id>PU240</id> <comp>0.018193</comp> </nuclide>
+    <nuclide> <id>PU241</id> <comp>0.010380</comp> </nuclide>
+    <nuclide> <id>PU242</id> <comp>0.006833</comp> </nuclide>
+  </recipe>
+
+  <!-- *********************** -->
+
+
+  
+  
+  <!-- ****** PWR MOX recipe ***** -->
+  <!-- *** new **** -->
+  <recipe>
+    <name>PWR_MOX_new</name>
+    <basis>mass</basis>
+    <nuclide><id>U238</id> <comp>0.916169</comp></nuclide>
+    <nuclide><id>PU238</id><comp>0.001134</comp></nuclide>
+    <nuclide><id>PU239</id><comp>0.053608</comp></nuclide>
+    <nuclide><id>PU240</id><comp>0.016859</comp></nuclide>
+    <nuclide><id>PU241</id><comp>0.006376</comp></nuclide>
+    <nuclide><id>PU242</id><comp>0.005854</comp></nuclide>
+  </recipe>
+  
+  <!-- *** spent *** -->
+  <recipe>
+    <name>PWR_MOX_spent</name>
+    <basis>mass</basis>
+    <nuclide><id>HE4</id><comp>0.0000093</comp></nuclide>
+    <nuclide><id>U234</id><comp>0.0000258</comp></nuclide>
+    <nuclide><id>U235</id><comp>0.0000088</comp></nuclide>
+    <nuclide><id>U236</id><comp>0.0000072</comp></nuclide>
+    <nuclide><id>U237</id><comp>0.0000010</comp></nuclide>
+    <nuclide><id>U238</id><comp>0.8850428</comp></nuclide>
+    <nuclide><id>U239</id><comp>0.0000005</comp></nuclide>
+    <nuclide><id>NP237</id><comp>0.0000990</comp></nuclide>
+    <nuclide><id>NP238</id><comp>0.0000002</comp></nuclide>
+    <nuclide><id>NP239</id><comp>0.0000676</comp></nuclide>
+    <nuclide><id>PU238</id><comp>0.0011499</comp></nuclide>
+    <nuclide><id>PU239</id><comp>0.0255983</comp></nuclide>
+    <nuclide><id>PU240</id><comp>0.0172089</comp></nuclide>
+    <nuclide><id>PU241</id><comp>0.0098204</comp></nuclide>
+    <nuclide><id>PU242</id><comp>0.0064626</comp></nuclide>
+    <nuclide><id>PU243</id><comp>0.0000007</comp></nuclide>
+    <nuclide><id>PU244</id><comp>0.0000003</comp></nuclide>
+    <nuclide><id>AM241</id><comp>0.0008617</comp></nuclide>
+    <nuclide><id>AM242M</id><comp>0.0000169</comp></nuclide>
+    <nuclide><id>AM242</id><comp>0.0000009</comp></nuclide>
+    <nuclide><id>AM243</id><comp>0.0016339</comp></nuclide>
+    <nuclide><id>AM244</id><comp>0.0000009</comp></nuclide>
+    <nuclide><id>CM242</id><comp>0.0001555</comp></nuclide>
+    <nuclide><id>CM243</id><comp>0.0000057</comp></nuclide>
+    <nuclide><id>CM244</id><comp>0.0010069</comp></nuclide>
+    <nuclide><id>CM245</id><comp>0.0001287</comp></nuclide>
+    <nuclide><id>CM246</id><comp>0.0000095</comp></nuclide>
+    <nuclide><id>CM247</id><comp>0.0000002</comp></nuclide>
+    <nuclide><id>H3</id><comp>0.0000001</comp></nuclide>
+    <nuclide><id>GE74</id><comp>0.0000001</comp></nuclide>
+    <nuclide><id>AS75</id><comp>0.0000003</comp></nuclide>
+    <nuclide><id>GE76</id><comp>0.0000006</comp></nuclide>
+    <nuclide><id>SE77</id><comp>0.0000012</comp></nuclide>
+    <nuclide><id>SE78</id><comp>0.0000033</comp></nuclide>
+    <nuclide><id>SE79</id><comp>0.0000074</comp></nuclide>
+    <nuclide><id>SE80</id><comp>0.0000161</comp></nuclide>
+    <nuclide><id>BR81</id><comp>0.0000242</comp></nuclide>
+    <nuclide><id>SE82</id><comp>0.0000340</comp></nuclide>
+    <nuclide><id>KR82</id><comp>0.0000017</comp></nuclide>
+    <nuclide><id>KR83</id><comp>0.0000379</comp></nuclide>
+    <nuclide><id>KR84</id><comp>0.0001038</comp></nuclide>
+    <nuclide><id>KR85</id><comp>0.0000193</comp></nuclide>
+    <nuclide><id>RB85</id><comp>0.0000803</comp></nuclide>
+    <nuclide><id>KR86</id><comp>0.0001451</comp></nuclide>
+    <nuclide><id>SR86</id><comp>0.0000005</comp></nuclide>
+    <nuclide><id>RB87</id><comp>0.0001813</comp></nuclide>
+    <nuclide><id>SR88</id><comp>0.0002534</comp></nuclide>
+    <nuclide><id>SR89</id><comp>0.0000153</comp></nuclide>
+    <nuclide><id>Y89</id><comp>0.0003036</comp></nuclide>
+    <nuclide><id>SR90</id><comp>0.0003758</comp></nuclide>
+    <nuclide><id>ZR90</id><comp>0.0000193</comp></nuclide>
+    <nuclide><id>SR91</id><comp>0.0000002</comp></nuclide>
+    <nuclide><id>Y91</id><comp>0.0000263</comp></nuclide>
+    <nuclide><id>ZR91</id><comp>0.0004447</comp></nuclide>
+    <nuclide><id>ZR92</id><comp>0.0005805</comp></nuclide>
+    <nuclide><id>Y93</id><comp>0.0000003</comp></nuclide>
+    <nuclide><id>ZR93</id><comp>0.0007386</comp></nuclide>
+    <nuclide><id>ZR94</id><comp>0.0008374</comp></nuclide>
+    <nuclide><id>ZR95</id><comp>0.0000583</comp></nuclide>
+    <nuclide><id>NB95</id><comp>0.0000322</comp></nuclide>
+    <nuclide><id>MO95</id><comp>0.0008045</comp></nuclide>
+    <nuclide><id>ZR96</id><comp>0.0010139</comp></nuclide>
+    <nuclide><id>MO96</id><comp>0.0000627</comp></nuclide>
+    <nuclide><id>ZR97</id><comp>0.0000007</comp></nuclide>
+    <nuclide><id>MO97</id><comp>0.0010889</comp></nuclide>
+    <nuclide><id>MO98</id><comp>0.0011969</comp></nuclide>
+    <nuclide><id>MO99</id><comp>0.0000034</comp></nuclide>
+    <nuclide><id>TC99</id><comp>0.0010739</comp></nuclide>
+    <nuclide><id>TC99M</id><comp>0.0000003</comp></nuclide>
+    <nuclide><id>MO100</id><comp>0.0014189</comp></nuclide>
+    <nuclide><id>RU100</id><comp>0.0002059</comp></nuclide>
+    <nuclide><id>RU101</id><comp>0.0012289</comp></nuclide>
+    <nuclide><id>RU102</id><comp>0.0014059</comp></nuclide>
+    <nuclide><id>RU103</id><comp>0.0000552</comp></nuclide>
+    <nuclide><id>RH103</id><comp>0.0007517</comp></nuclide>
+    <nuclide><id>RU104</id><comp>0.0013629</comp></nuclide>
+    <nuclide><id>PD104</id><comp>0.0006589</comp></nuclide>
+    <nuclide><id>RU105</id><comp>0.0000002</comp></nuclide>
+    <nuclide><id>RH105</id><comp>0.0000016</comp></nuclide>
+    <nuclide><id>PD105</id><comp>0.0010659</comp></nuclide>
+    <nuclide><id>RU106</id><comp>0.0003506</comp></nuclide>
+    <nuclide><id>PD106</id><comp>0.0008371</comp></nuclide>
+    <nuclide><id>PD107</id><comp>0.0007707</comp></nuclide>
+    <nuclide><id>PD108</id><comp>0.0005459</comp></nuclide>
+    <nuclide><id>PD109</id><comp>0.0000003</comp></nuclide>
+    <nuclide><id>AG109</id><comp>0.0002336</comp></nuclide>
+    <nuclide><id>PD110</id><comp>0.0001760</comp></nuclide>
+    <nuclide><id>AG110M</id><comp>0.0000034</comp></nuclide>
+    <nuclide><id>CD110</id><comp>0.0002020</comp></nuclide>
+    <nuclide><id>AG111</id><comp>0.0000007</comp></nuclide>
+    <nuclide><id>CD111</id><comp>0.0000903</comp></nuclide>
+    <nuclide><id>CD112</id><comp>0.0000480</comp></nuclide>
+    <nuclide><id>CD113</id><comp>0.0000003</comp></nuclide>
+    <nuclide><id>CD113M</id><comp>0.0000007</comp></nuclide>
+    <nuclide><id>CD114</id><comp>0.0000532</comp></nuclide>
+    <nuclide><id>IN115</id><comp>0.0000031</comp></nuclide>
+    <nuclide><id>SN115</id><comp>0.0000006</comp></nuclide>
+    <nuclide><id>CD116</id><comp>0.0000156</comp></nuclide>
+    <nuclide><id>SN116</id><comp>0.0000163</comp></nuclide>
+    <nuclide><id>SN117</id><comp>0.0000154</comp></nuclide>
+    <nuclide><id>SN118</id><comp>0.0000155</comp></nuclide>
+    <nuclide><id>SN119</id><comp>0.0000156</comp></nuclide>
+    <nuclide><id>SN120</id><comp>0.0000158</comp></nuclide>
+    <nuclide><id>SB121</id><comp>0.0000146</comp></nuclide>
+    <nuclide><id>SN122</id><comp>0.0000170</comp></nuclide>
+    <nuclide><id>TE122</id><comp>0.0000015</comp></nuclide>
+    <nuclide><id>SN123</id><comp>0.0000005</comp></nuclide>
+    <nuclide><id>SB123</id><comp>0.0000176</comp></nuclide>
+    <nuclide><id>SN124</id><comp>0.0000228</comp></nuclide>
+    <nuclide><id>SB124</id><comp>0.0000001</comp></nuclide>
+    <nuclide><id>TE124</id><comp>0.0000011</comp></nuclide>
+    <nuclide><id>SN125</id><comp>0.0000001</comp></nuclide>
+    <nuclide><id>SB125</id><comp>0.0000243</comp></nuclide>
+    <nuclide><id>TE125</id><comp>0.0000142</comp></nuclide>
+    <nuclide><id>TE125M</id><comp>0.0000003</comp></nuclide>
+    <nuclide><id>SN126</id><comp>0.0000566</comp></nuclide>
+    <nuclide><id>TE126</id><comp>0.0000019</comp></nuclide>
+    <nuclide><id>SB127</id><comp>0.0000005</comp></nuclide>
+    <nuclide><id>TE127M</id><comp>0.0000018</comp></nuclide>
+    <nuclide><id>I127</id><comp>0.0001160</comp></nuclide>
+    <nuclide><id>TE128</id><comp>0.0002146</comp></nuclide>
+    <nuclide><id>XE128</id><comp>0.0000106</comp></nuclide>
+    <nuclide><id>TE129M</id><comp>0.0000017</comp></nuclide>
+    <nuclide><id>I129</id><comp>0.0003429</comp></nuclide>
+    <nuclide><id>TE130</id><comp>0.0006432</comp></nuclide>
+    <nuclide><id>XE130</id><comp>0.0000333</comp></nuclide>
+    <nuclide><id>TE131M</id><comp>0.0000002</comp></nuclide>
+    <nuclide><id>I131</id><comp>0.0000077</comp></nuclide>
+    <nuclide><id>XE131</id><comp>0.0006035</comp></nuclide>
+    <nuclide><id>XE131M</id><comp>0.0000001</comp></nuclide>
+    <nuclide><id>TE132</id><comp>0.0000043</comp></nuclide>
+    <nuclide><id>I132</id><comp>0.0000001</comp></nuclide>
+    <nuclide><id>XE132</id><comp>0.0018469</comp></nuclide>
+    <nuclide><id>I133</id><comp>0.0000016</comp></nuclide>
+    <nuclide><id>XE133</id><comp>0.0000096</comp></nuclide>
+    <nuclide><id>XE133M</id><comp>0.0000001</comp></nuclide>
+    <nuclide><id>CS133</id><comp>0.0015469</comp></nuclide>
+    <nuclide><id>XE134</id><comp>0.0021409</comp></nuclide>
+    <nuclide><id>CS134</id><comp>0.0002096</comp></nuclide>
+    <nuclide><id>BA134</id><comp>0.0001102</comp></nuclide>
+    <nuclide><id>I135</id><comp>0.0000005</comp></nuclide>
+    <nuclide><id>XE135</id><comp>0.0000002</comp></nuclide>
+    <nuclide><id>CS135</id><comp>0.0005988</comp></nuclide>
+    <nuclide><id>BA135</id><comp>0.0000011</comp></nuclide>
+    <nuclide><id>XE136</id><comp>0.0035268</comp></nuclide>
+    <nuclide><id>CS136</id><comp>0.0000010</comp></nuclide>
+    <nuclide><id>BA136</id><comp>0.0000501</comp></nuclide>
+    <nuclide><id>CS137</id><comp>0.0017999</comp></nuclide>
+    <nuclide><id>BA137</id><comp>0.0000861</comp></nuclide>
+    <nuclide><id>BA138</id><comp>0.0017349</comp></nuclide>
+    <nuclide><id>LA138</id><comp>0.0000001</comp></nuclide>
+    <nuclide><id>LA139</id><comp>0.0016729</comp></nuclide>
+    <nuclide><id>BA140</id><comp>0.0000201</comp></nuclide>
+    <nuclide><id>LA140</id><comp>0.0000027</comp></nuclide>
+    <nuclide><id>CE140</id><comp>0.0016849</comp></nuclide>
+    <nuclide><id>LA141</id><comp>0.0000002</comp></nuclide>
+    <nuclide><id>CE141</id><comp>0.0000486</comp></nuclide>
+    <nuclide><id>PR141</id><comp>0.0014709</comp></nuclide>
+    <nuclide><id>CE142</id><comp>0.0014909</comp></nuclide>
+    <nuclide><id>ND142</id><comp>0.0000473</comp></nuclide>
+    <nuclide><id>CE143</id><comp>0.0000018</comp></nuclide>
+    <nuclide><id>PR143</id><comp>0.0000175</comp></nuclide>
+    <nuclide><id>ND143</id><comp>0.0008714</comp></nuclide>
+    <nuclide><id>CE144</id><comp>0.0003209</comp></nuclide>
+    <nuclide><id>ND144</id><comp>0.0013549</comp></nuclide>
+    <nuclide><id>PR145</id><comp>0.0000002</comp></nuclide>
+    <nuclide><id>ND145</id><comp>0.0008276</comp></nuclide>
+    <nuclide><id>ND146</id><comp>0.0009577</comp></nuclide>
+    <nuclide><id>ND147</id><comp>0.0000071</comp></nuclide>
+    <nuclide><id>PM147</id><comp>0.0001378</comp></nuclide>
+    <nuclide><id>SM147</id><comp>0.0000858</comp></nuclide>
+    <nuclide><id>ND148</id><comp>0.0005543</comp></nuclide>
+    <nuclide><id>PM148</id><comp>0.0000015</comp></nuclide>
+<!--    <nuclide><id>PM148M</id><comp>0.0000014</comp></nuclide> -->
+    <nuclide><id>SM148</id><comp>0.0002823</comp></nuclide>
+    <nuclide><id>PM149</id><comp>0.0000014</comp></nuclide>
+    <nuclide><id>SM149</id><comp>0.0000027</comp></nuclide>
+    <nuclide><id>ND150</id><comp>0.0003330</comp></nuclide>
+    <nuclide><id>SM150</id><comp>0.0004693</comp></nuclide>
+    <nuclide><id>PM151</id><comp>0.0000003</comp></nuclide>
+    <nuclide><id>SM151</id><comp>0.0000212</comp></nuclide>
+    <nuclide><id>SM152</id><comp>0.0002073</comp></nuclide>
+    <nuclide><id>SM153</id><comp>0.0000015</comp></nuclide>
+    <nuclide><id>EU153</id><comp>0.0002287</comp></nuclide>
+    <nuclide><id>SM154</id><comp>0.0000987</comp></nuclide>
+    <nuclide><id>EU154</id><comp>0.0000957</comp></nuclide>
+    <nuclide><id>GD154</id><comp>0.0000109</comp></nuclide>
+    <nuclide><id>EU155</id><comp>0.0000364</comp></nuclide>
+    <nuclide><id>GD155</id><comp>0.0000003</comp></nuclide>
+    <nuclide><id>EU156</id><comp>0.0000077</comp></nuclide>
+    <nuclide><id>GD156</id><comp>0.0002366</comp></nuclide>
+    <nuclide><id>GD157</id><comp>0.0000002</comp></nuclide>
+    <nuclide><id>GD158</id><comp>0.0000674</comp></nuclide>
+    <nuclide><id>TB159</id><comp>0.0000093</comp></nuclide>
+    <nuclide><id>GD160</id><comp>0.0000046</comp></nuclide>
+    <nuclide><id>TB160</id><comp>0.0000003</comp></nuclide>
+    <nuclide><id>DY160</id><comp>0.0000012</comp></nuclide>
+    <nuclide><id>DY161</id><comp>0.0000014</comp></nuclide>
+    <nuclide><id>DY162</id><comp>0.0000012</comp></nuclide>
+    <nuclide><id>DY163</id><comp>0.0000013</comp></nuclide>
+    <nuclide><id>DY164</id><comp>0.0000002</comp></nuclide>
+    <nuclide><id>HO165</id><comp>0.0000008</comp></nuclide>
+    <nuclide><id>ER166</id><comp>0.0000003</comp></nuclide>
+  </recipe>
+  <!-- *********************** -->
+  
+  
+  <!-- *** FBR MOX recipe **** -->
+  <!-- *** new **** -->
+  <recipe>
+    <name>FBR_MOX_new</name>
+    <basis>mass</basis>
+    <nuclide><id>U238</id> <comp>0.91466</comp></nuclide>
+    <nuclide><id>Pu239</id> <comp>0.08534</comp></nuclide>
+  </recipe>
+  
+  <!-- *** spent *** -->
+  <recipe>
+    <name>FBR_MOX_spent</name>
+    <basis>mass</basis>
+    <nuclide><id>U238</id> <comp>0.91466</comp></nuclide>
+    <nuclide><id>Pu239</id> <comp>0.08534</comp></nuclide>
+  </recipe>
+  <!-- *********************** -->
+  
+  
+  <!-- * FBR blanket recipe ** -->
+  <!-- *** new **** -->
+  <recipe>
+    <name>FBR_blanket_new</name>
+    <basis>mass</basis>
+    <nuclide><id>U238</id> <comp>0.86025</comp></nuclide>
+    <nuclide><id>Pu239</id> <comp>0.09596</comp></nuclide>
+    <nuclide><id>Am241</id> <comp>0.00107</comp></nuclide>
+    
+    <nuclide> <id>Cs137</id> <comp>0.04272</comp> </nuclide>
+  </recipe>
+  
+  <!-- *** spent *** -->
+  <recipe>
+    <name>FBR_blanket_spent</name>
+    <basis>mass</basis>
+    <nuclide><id>U238</id> <comp>0.86025</comp></nuclide>
+    <nuclide><id>Pu239</id> <comp>0.09596</comp></nuclide>
+    <nuclide><id>Am241</id> <comp>0.00107</comp></nuclide>
+    
+    <nuclide> <id>Cs137</id> <comp>0.04272</comp> </nuclide>
+  </recipe>
+  <!-- *********************** -->
+  
+</My_include>

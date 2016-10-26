@@ -1,0 +1,169 @@
+<simulation xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <schematype>flat</schematype>
+  <control>
+    <duration>3600</duration>
+    <startmonth>1</startmonth>
+    <startyear>2015</startyear>
+    <decay>lazy</decay>
+  </control>
+
+  <archetypes>
+    <spec> <lib>cycamore</lib> <name>Source</name></spec>
+    <spec> <lib>cycamore</lib> <name>DeployInst</name></spec>
+    <spec> <lib>cycamore</lib> <name>Sink</name></spec>
+    <spec> <lib>cycamore</lib> <name>Enrichment</name> </spec>
+    <spec> <lib>cycamore</lib> <name>Reactor</name> </spec>
+    <spec> <lib>cycamore</lib> <name>Storage</name> </spec>
+    <spec> <lib>cycamore</lib> <name>FuelFab</name> </spec>
+    <spec> <lib>cycamore</lib> <name>Mixer</name> </spec>
+    <spec> <lib>cycamore</lib> <name>Separations</name> </spec>
+    <spec><lib>cyclass</lib><name>Reactor</name><alias>cyclassReactor</alias></spec>
+    <spec><lib>cyclass</lib><name>FuelFab</name><alias>cyclassFuelFab</alias></spec>
+  </archetypes>
+
+
+  <xi:include href="recipe.xml" xpointer="xpointer(//My_include/*)"/>
+  <!--      <xi:include href="FBR-cycle.xml" xpointer="xpointer(//My_include/*)"/> -->
+  <xi:include href="LWR-cycle.xml" xpointer="xpointer(//My_include/*)"/>
+
+
+  <prototype>
+    <name>E3_limited_source_u</name>
+    <config>
+      <Source>
+        <outcommod>E3_u_initial</outcommod>
+        <outrecipe>E3_u</outrecipe>
+        <inventory_size>1000000000</inventory_size>
+        <throughput>1e100</throughput>
+      </Source>
+    </config>
+  </prototype>
+
+  <prototype>
+    <name>E3_limited_source_pu</name>
+    <config>
+      <Source>
+        <outcommod>E3_pu_initial</outcommod>
+        <outrecipe>E3_pu</outrecipe>
+        <inventory_size>370000</inventory_size>
+        <throughput>1e100</throughput>
+      </Source>
+    </config>
+  </prototype>
+
+
+  <prototype>
+    <name>J1_limited_source_u</name>
+    <config>
+      <Source>
+        <outcommod>J1_u_initial</outcommod>
+        <outrecipe>J1_u</outrecipe>
+        <inventory_size>1000000000</inventory_size>
+        <throughput>1e100</throughput>
+      </Source>
+    </config>
+  </prototype>
+
+  <prototype>
+    <name>J1_limited_source_pu</name>
+    <config>
+      <Source>
+        <outcommod>J1_pu_initial</outcommod>
+        <outrecipe>J1_pu</outrecipe>
+        <inventory_size>300000</inventory_size>
+        <throughput>10000</throughput>
+      </Source>
+    </config>
+  </prototype>
+
+
+<prototype>
+  <name>waste</name>
+  <config>
+    <Sink>
+      <in_commods><val>waste</val></in_commods>
+      <capacity>1e100</capacity>
+    </Sink>
+  </config>
+</prototype>
+
+  <prototype>
+    <name>deployer_PWR_CHAIN</name>
+    <config>
+      <DeployInst>
+        <prototypes>
+          <val>waste</val>
+          <val>E3_limited_source_u</val>
+          <val>E3_limited_source_pu</val>
+          <val>J1_limited_source_u</val>
+          <val>J1_limited_source_pu</val>
+          <val>u_mixer</val>
+          <val>pu_mixer</val>
+          <val>PWR_fabrication</val>
+          <val>PWR_cooling</val>
+          <val>PWR_storage</val>
+          <val>PWR_separation</val>
+          <val>J1_second_storage_u</val>
+          <val>J1_second_storage_pu</val>
+          <val>E3_storage_u</val>
+          <val>E3_storage_pu</val>
+          <val>J1_prime_storage</val>
+          <val>PWR_storage_fp</val>
+          <val>PWR_storage_ma</val>
+          <val>PWR</val>
+        </prototypes>
+
+        <build_times>
+          <val>1</val>
+          <val>1</val>
+          <val>1</val>
+          <val>1</val>
+          <val>1</val>
+          <val>1</val>
+          <val>1</val>
+          <val>1</val>
+          <val>1</val>
+          <val>1</val>
+          <val>1</val>
+          <val>1</val>
+          <val>1</val>
+          <val>1</val>
+          <val>1</val>
+          <val>1</val>
+          <val>1</val>
+          <val>1</val>
+          <val>1</val>
+        </build_times>
+
+        <n_build>
+          <val>1</val>
+          <val>1</val>
+          <val>1</val>
+          <val>1</val>
+          <val>1</val>
+          <val>1</val>
+          <val>1</val>
+          <val>1</val>
+          <val>1</val>
+          <val>1</val>
+          <val>1</val>
+          <val>1</val>
+          <val>1</val>
+          <val>1</val>
+          <val>1</val>
+          <val>1</val>
+          <val>1</val>
+          <val>1</val>
+          <val>1</val>
+        </n_build>
+      </DeployInst>
+    </config>
+  </prototype>
+
+
+  <agent> <name>deployer</name> <prototype>deployer_PWR_CHAIN</prototype> </agent>
+  
+  
+  
+</simulation>
