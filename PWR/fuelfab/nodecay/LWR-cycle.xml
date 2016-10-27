@@ -1,37 +1,5 @@
 <My_include>
 
-  <!-- Comodity list & definition:
-
-   * PWR_MOX_new    : new MOX fuel for PWR
-   * PWR_MOX_spent  : spent MOX fuel for PWR
-   * PWR_MOX_cooled : spent MOX fuel for PWR AFTER COOLING
-   * PWR_MOX_stored : spent MOX fuel for PWR AVAILABLE in storage
-
-   * PWR_pu : pu after separation
-   * PWR_ma : ma after separation
-   * PWR_fp : fp after separation
-   * PWR_ru : ru after separation
-
-   * PWR_pu_stored : pu AVAILABLE in storage
-   * PWR_ma_stored : ma AVAILABLE in storage
-   * PWR_fp_stored : fp AVAILABLE in storage
-   * PWR_ru_stored : ru AVAILABLE in storage
-
-   * FBR_blanket_pu_stored  : pu from FBR blanket
-   * FBR_blanket_ru_stored  : ru from FBR blanket
-   * EXT2_blanket_pu_stored : pu form EXT source 2
-   * EXT2_ru_stored         : ru from EXT source 2
-
-   -->
-
-
-
-
-
-
-
-
-  <!--      PWR fabrication      -->
   <prototype>
     <name>PWR_fabrication</name>
     <!--    <lifetime>960</lifetime> -->
@@ -39,7 +7,7 @@
       <FuelFab>
 
 	<fiss_commods>
-	  <val>E3_second_stored</val>
+	  <val>pu_mixed</val>
 	</fiss_commods>
 
 	<fiss_recipe>E3_second</fiss_recipe>

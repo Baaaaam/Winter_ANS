@@ -32,9 +32,9 @@
       <cyclassFuelFab>
 
         <eq_model>MLP_Kinf</eq_model>
-        <eq_command>/Users/mouginot/work/App/CLASS/DATA_BASES/PWR/MOX/EQModel/MLP_Kinf/MLP/PWR_MOX_30Wg.xml,/Users/mouginot/work/App/CLASS/DATA_BASES/PWR/MOX/EQModel/MLP_Kinf/MLP/PWR_MOX_30Wg.nfo,3,1.034</eq_command>
+        <eq_command>/Users/mouginot/work/App/CLASS/DATA_BASES/PWR/MOX/EQModel/MLP_Kinf/MLP/PWR_MOX_30Wg.xml,/Users/mouginot/work/App/CLASS/DATA_BASES/PWR/MOX/EQModel/MLP_Kinf/MLP/PWR_MOX_30Wg.nfo,3,1.039</eq_command>
         <fiss_commods><val>pu_mixed</val></fiss_commods>
-        <fiss_size>88695</fiss_size>
+        <fiss_size>20000</fiss_size>
 
 
         <fill_commods><val>u_mixed</val></fill_commods>
@@ -148,9 +148,8 @@
     <name>Fresh_MOX_request</name>
     <basis>atom</basis>
 
-    <nuclide> <id>U235</id><comp> 0.00239014</comp> </nuclide>
-    <nuclide> <id>U238</id><comp> 0.953665  </comp> </nuclide>
-    <nuclide> <id>PU239</id><comp> 0.0439453 </comp> </nuclide>
+    <nuclide> <id>U238</id> <comp> 0.9472656 </comp> </nuclide>
+    <nuclide> <id>PU239</id><comp> 0.0527344 </comp> </nuclide>
   </recipe>
 
 

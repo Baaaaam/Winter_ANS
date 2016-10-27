@@ -6,6 +6,7 @@
     <startmonth>1</startmonth>
     <startyear>2015</startyear>
     <decay>lazy</decay>
+    <explicit_inventory>true</explicit_inventory>
   </control>
 
   <archetypes>
