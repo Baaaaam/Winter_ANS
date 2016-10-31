@@ -34,7 +34,7 @@
         <eq_model>MLP_Kinf</eq_model>
         <eq_command>/Users/mouginot/work/App/CLASS/DATA_BASES/PWR/MOX/EQModel/MLP_Kinf/MLP/PWR_MOX_30Wg.xml,/Users/mouginot/work/App/CLASS/DATA_BASES/PWR/MOX/EQModel/MLP_Kinf/MLP/PWR_MOX_30Wg.nfo,3,1.039</eq_command>
         <fiss_commods><val>pu_mixed</val></fiss_commods>
-        <fiss_size>88695</fiss_size>
+        <fiss_size>20000</fiss_size>
 
 
         <fill_commods><val>u_mixed</val></fill_commods>
@@ -144,31 +144,33 @@
 
   <!-- *********************** -->
 
+  <recipe>
+    <name>Fresh_MOX_request</name>
+    <basis>atom</basis>
+
+    <nuclide> <id>U238</id> <comp> 0.9472656 </comp> </nuclide>
+    <nuclide> <id>PU239</id><comp> 0.0527344 </comp> </nuclide>
+  </recipe>
+
 
   <prototype>
     <name>PWR</name>
     <lifetime>3600</lifetime>
     <config>
-      <cyclassReactor>
-        <eq_model>MLP_Kinf</eq_model>
-        <eq_command>/Users/mouginot/work/App/CLASS/DATA_BASES/PWR/MOX/EQModel/MLP_Kinf/MLP/PWR_MOX_30Wg.xml,/Users/mouginot/work/App/CLASS/DATA_BASES/PWR/MOX/EQModel/MLP_Kinf/MLP/PWR_MOX_30Wg.nfo,3,1.039</eq_command>
+      <Reactor>
+        <fuel_inrecipes>  <val>Fresh_MOX_request</val></fuel_inrecipes>
+        <fuel_incommods>  <val>PWR_MOX_new</val></fuel_incommods>
 
-        <ir_model>RK4</ir_model>
-        <ir_command>none</ir_command>
-
-        <xs_model>XSM_MLP</xs_model>
-        <xs_command>/Users/mouginot/work/App/CLASS/DATA_BASES/PWR/MOX/XSModel/30Wg_FullMOX/,Data_Base_Info.nfo,false</xs_command>
-        <fuel_incommods>	<val>PWR_MOX_new</val>		</fuel_incommods>
-        <fuel_outcommods>	<val>PWR_MOX_spent</val>	</fuel_outcommods>
-        <burnup>50</burnup>
-        <cycle_time>54</cycle_time>
-        <power_cap>900</power_cap>
-        <power>3000</power>
-        <refuel_time>0</refuel_time>
+        <fuel_outrecipes> <val>PWR_MOX_spent</val></fuel_outrecipes>
+        <fuel_outcommods> <val>PWR_MOX_spent</val></fuel_outcommods>
         <assem_size>88695</assem_size>
         <n_assem_core>1</n_assem_core>
+        <cycle_time>54</cycle_time>
+        <refuel_time>0</refuel_time>
         <n_assem_batch>1</n_assem_batch>
-      </cyclassReactor>
+        <power_cap>900</power_cap>
+
+      </Reactor>
     </config>
   </prototype>
 

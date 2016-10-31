@@ -29,7 +29,15 @@ plot [0.25:300][5:15] 'PWR/mixer/nodecay/Fuel_PU_enricht.dat'    every ::1 using
                       'PWR/fuelfab/nodecay/Fuel_PU_enricht.dat'  every ::1 using 1:2 with lines lw 2 dashtype 1 lc rgb "dark-green" title "Pu-eq no-decay", \
                       'PWR/fuelfab/decay/Fuel_PU_enricht.dat'    every ::1 using 1:2 with lines lw 2 lt 2 dt 2 lc rgb "dark-green"title "Pu-eq decay", \
                       'PWR/neural/nodecay/recipe/Fuel_PU_enricht.dat'   every ::1 using 1:2 with lines lw 2 dashtype 1 lc rgb "red" title "NN no-decay", \
-                      'PWR/neural/nodecay/depletion/Fuel_PU_enricht.dat'     every ::1 using 1:2 with lines lw 2 lt 2 dt 2 lc rgb "red" title "NN decay"
+                      'PWR/neural/decay/recipe/Fuel_PU_enricht.dat'     every ::1 using 1:2 with lines lw 2 lt 2 dt 2 lc rgb "red" title "NN decay"
 
 
 
+#PLOT J1 contribution stograe:
+set key bottom right
+set output "depletion.pu_contribution.png"
+set ylabel "Pu fraction in the LWR MOX fuel [%]"
+plot [0.25:300][5:15] 'PWR/neural/nodecay/recipe/Fuel_PU_enricht.dat'   every ::1 using 1:2 with lines lw 2 dashtype 1 lc rgb "red" title "NN no-decay recipe", \
+                      'PWR/neural/decay/recipe/Fuel_PU_enricht.dat'     every ::1 using 1:2 with lines lw 2 lt 2 dt 2 lc rgb "red" title "NN decay recipe", \
+                      'PWR/neural/nodecay/depletion/Fuel_PU_enricht.dat'   every ::1 using 1:2 with lines lw 2 dashtype 1 lc rgb "orange" title "NN no-decay depletion", \
+                      'PWR/neural/decay/depletion/Fuel_PU_enricht.dat'     every ::1 using 1:2 with lines lw 2 lt 2 dt 2 lc rgb "orange" title "NN decay depletion"
