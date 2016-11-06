@@ -159,8 +159,8 @@
     <name>Fresh_MOX_request</name>
     <basis>atom</basis>
 
-    <nuclide> <id>U238</id> <comp> 0.9472656 </comp> </nuclide>
-    <nuclide> <id>PU239</id><comp> 0.0527344 </comp> </nuclide>
+    <nuclide> <id>U238</id> <comp> 0.94 </comp> </nuclide>
+    <nuclide> <id>PU239</id><comp> 0.06 </comp> </nuclide>
   </recipe>
 
 
